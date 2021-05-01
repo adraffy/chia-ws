@@ -1,0 +1,11 @@
+{
+  "name": "chia-ws",
+  "version": "0.0.1",
+  "description": "simple ws wrapper for chia daemon",
+  "type": "module",
+  "author": "raffy@me.com",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.4.5"
+  }
+}
