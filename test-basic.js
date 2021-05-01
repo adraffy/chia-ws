@@ -15,7 +15,7 @@ daemon.on('close', (err) => {});
 
 // error occurred during connection
 daemon.on('connect-error', (err) => {
-	console.log(err);
+	console.error(err);
 });
 
 daemon.on('spam', (type, msg) => {
@@ -25,9 +25,7 @@ daemon.on('spam', (type, msg) => {
 
 // poor mans keep-alive
 // can be disabled by using a non-positive heartbeat_period
-daemon.on('heartbeat', () => {
-	console.log('beat');	
-});
+daemon.on('heartbeat', () => {});
 
 // this is a custom call that issues "is_running" on known services
 // returns {service: state, ...}
